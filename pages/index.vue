@@ -1,52 +1,50 @@
 <template>
-  <section class="container">
-    <div>
-      <app-logo />
-      <h1 class="title">nuxt-ssg</h1>
-      <h2 class="subtitle">Nuxt.js project</h2>
-    </div>
-  </section>
+  <div class="container">
+    <Header></Header>
+    <div id="A" class="section">A</div>
+    <div id="B" class="section">B</div>
+    <div id="C" class="section">C</div>
+    <div id="D" class="section">D</div>
+    <Footer></Footer>
+  </div>
 </template>
 
 <script>
-import AppLogo from "~/components/AppLogo.vue";
+import AppLogo from "~/components/atom/AppLogo.vue";
+
+import Header from "~/components/molecules/Header.vue";
+import Footer from "~/components/molecules/Footer.vue";
 
 export default {
   components: {
-    AppLogo
+    AppLogo,
+    Header,
+    Footer
   }
 };
 </script>
 
 <style>
 .container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100%;
+}
+.section {
+  width: 100%;
+  height: 400px;
+  line-height: 400px;
   text-align: center;
 }
-
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+#A {
+  background-color: red;
 }
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+#B {
+  background-color: blue;
 }
-
-.links {
-  padding-top: 15px;
+#C {
+  background-color: green;
+}
+#D {
+  background-color: purple;
 }
 </style>
 
