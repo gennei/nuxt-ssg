@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <Header></Header>
     <heading></heading>
     <profile></profile>
     <skills></skills>
