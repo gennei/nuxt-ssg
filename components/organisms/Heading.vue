@@ -7,7 +7,7 @@
 
 <style scoped>
 .heading {
-  height: 400px;
+  height: 300px;
   width: 100%;
   background: center / cover no-repeat url("~assets/header.jpg");
   text-align: center;
@@ -25,6 +25,7 @@
   right: 0;
   bottom: 0;
   left: 0;
+  height: 300px;
 }
 p {
   color: white;
